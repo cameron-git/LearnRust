@@ -11,17 +11,17 @@ fn main() {
     let spaces = spaces.len();
     println!("{}", spaces);
 
-    let tup = (500, 6.4, 1);
-    let (x, y, z) = tup;
-    println!("The value of y is: {}", y);
+    // let tup = (500, 6.4, 1);
+    // let (x, y, z) = tup;
+    // println!("The value of y is: {}", y);
 
-    let x: (i32, f64, u8) = (500, 6.4, 1);
-    let five_hundred = x.0;
-    let six_point_four = x.1;
-    let one = x.2;
-    println!("The value of six_point_four is: {}", six_point_four);
+    // let x: (i32, f64, u8) = (500, 6.4, 1);
+    // let five_hundred = x.0;
+    // let six_point_four = x.1;
+    // let one = x.2;
+    // println!("The value of six_point_four is: {}", six_point_four);
 
-    let a: [i32; 5] = [1, 2, 3, 4, 5];
-    let b = [3; 5];
-    println!("{}", b[0]);
+    // let a: [i32; 5] = [1, 2, 3, 4, 5];
+    // let b = [3; 5];
+    // println!("{}", b[0]);
 }

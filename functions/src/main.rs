@@ -1,5 +1,3 @@
-use std::collections::btree_map::Values;
-
 fn main() {
     print_labeled_measurement(5, 'h');
 
