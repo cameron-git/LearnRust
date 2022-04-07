@@ -21,11 +21,29 @@ fn main() {
     //     area(&rect1)
     // );
 
-    let rect1 = Rectangle {
-        width: 30,
-        height: 50,
-    };
-    println!("rect1: {:#?}", rect1);
+    // let rect1 = Rectangle {
+    //     width: 30,
+    //     height: 50,
+    // };
+    // println!("rect1: {:#?}", rect1);
+
+    // let scale =2;
+    // let rect1 = Rectangle {
+    //     width: dbg!(30 * scale),
+    //     height: 50,
+    // };
+    // dbg!(&rect1);
+
+    // let rect1 = Rectangle {
+    //     width: 30,
+    //     height: 50,
+    // };
+
+    let rect1 = Rectangle::square(20);
+    println!(
+        "The area of the rectangle is {} square pixels.",
+        rect1.area()
+    );
 }
 
 // fn area(width: u32, height: u32) -> u32 {
@@ -45,8 +63,28 @@ fn main() {
 //     rectangle.width * rectangle.height
 // }
 
-#[derive(Debug)]
+// #[derive(Debug)]
+// struct Rectangle {
+//     width: u32,
+//     height: u32,
+// }
+
 struct Rectangle {
     width: u32,
     height: u32,
+}
+
+impl Rectangle {
+    /// Creates a rectangle with equal width and height
+    fn square(size: u32) -> Rectangle {
+        Rectangle {
+            width: size,
+            height: size,
+        }
+    }
+
+    /// Returns the area of the rectangle
+    fn area(&self) -> u32 {
+        self.width * self.height
+    }
 }
